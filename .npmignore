@@ -1,0 +1,24 @@
+# 개발 및 환경 설정 관련 파일
+src/
+node_modules/
+tests/
+coverage/
+
+# 환경 설정 및 빌드 관련 파일
+.env
+.eslintrc
+.prettierrc
+jest.config.js
+tsconfig.json
+
+# 빌드 및 배포 관련 임시파일
+dist/*.map
+*.log
+
+# 기타 배포 불필요한 파일
+.editorconfig
+.github/
+.gitignore
+.DS_Store
+.idea/
+.vscode/

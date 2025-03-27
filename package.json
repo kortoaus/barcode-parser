@@ -1,0 +1,34 @@
+{
+  "name": "@kortoaus/barcode-parser",
+  "version": "1.0.0",
+  "description": "A lightweight TypeScript library for reading barcode data.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
+    "dev": "tsup src/index.ts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "kortoaus",
+    "barcode",
+    "parser",
+    "typescript"
+  ],
+  "author": "kortoaus",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "decimal.js": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
